@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.style.setProperty("--fixed-vh", window.innerHeight + "px");</script>
+  <title>TruckDispatch</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <img src="assets/img/logo.svg" alt="TruckDispatch" width="151" height="20">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a href="/" class="nav__link"><span class="nav__link-text">HOME</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="/services" class="nav__link"><span class="nav__link-text">SERVICES</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="/about" class="nav__link"><span class="nav__link-text">ABOUT US</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="/coupons" class="nav__link"><span class="nav__link-text">COUPONS</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="/reviews" class="nav__link"><span class="nav__link-text">REVIEWS</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="/contact" class="nav__link"><span class="nav__link-text">CONTACT US</span></a>
+          </li>
+        </ul>
+      </nav>
+      <a href="tel:+13054282020" class="header__phone phone">
+        <img src="assets/img/phone-icon.svg" alt="" class="phone__icon" width="27" height="27">
+        <span class="phone__number">(305)-428-2020</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <video class="hero__video" autoplay muted loop playsinline>
+      <source src="assets/vid/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero__inner">
+      <h1 class="hero__title">Truck Dispatch Services</h1>
+      <p class="hero__desc">Professional dispatch, accounting support, and factoring for fleets and owner-operators.<br>We find the best loads, plan routes, and handle all the paperwork so you can just drive.</p>
+      <div class="hero__buttons">
+        <a href="#" class="hero__btn-audit">Get a Free Audit</a>
+        <a href="#" class="hero__btn-more">Learn More</a>
+      </div>
+    </div>
+    <a href="#" class="hero__callback callback">
+      <span class="callback__text">Call me Back</span>
+      <svg width="51" height="51" class="callback__icon" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_112_153)">
+            <path d="M43.5285 7.46594C33.5687 -2.49092 17.4229 -2.48853 7.46606 7.47142C-2.49079 17.4314 -2.4884 33.577 7.47154 43.5339C17.4315 53.4907 33.5772 53.4884 43.534 43.5284C48.3159 38.7451 51.0015 32.258 51 25.4944C50.9986 18.732 48.3111 12.247 43.5285 7.46594ZM38.6189 35.5211C38.6178 35.5222 38.6167 35.5234 38.6155 35.5245V35.516L37.3235 36.7995C35.6525 38.4916 33.219 39.1877 30.9059 38.6355C28.5756 38.0117 26.3603 37.0188 24.344 35.6945C22.4707 34.4973 20.7347 33.0978 19.1675 31.521C17.7254 30.0895 16.4299 28.5177 15.2999 26.829C14.064 25.0119 13.0857 23.0325 12.3929 20.947C11.5988 18.497 12.2569 15.8086 14.093 14.0025L15.6059 12.4895C16.0266 12.067 16.7101 12.0655 17.1325 12.4861C17.1336 12.4872 17.1348 12.4883 17.1359 12.4895L21.9129 17.2665C22.3354 17.6872 22.3369 18.3707 21.9163 18.7931C21.9152 18.7942 21.9141 18.7953 21.9129 18.7965L19.1079 21.6015C18.3031 22.3976 18.2019 23.6626 18.8699 24.5765C19.8845 25.9689 21.0072 27.279 22.2275 28.4951C23.588 29.8615 25.0671 31.1045 26.6474 32.2096C27.5606 32.8465 28.7985 32.7391 29.5884 31.9546L32.2999 29.2006C32.7205 28.7781 33.404 28.7766 33.8265 29.1972C33.8276 29.1983 33.8287 29.1994 33.8299 29.2006L38.6154 33.9946C39.038 34.4151 39.0395 35.0986 38.6189 35.5211Z" fill="#FFEB23" />
+        </g>
+        <defs>
+            <clipPath id="clip0_112_153">
+            <rect width="51" height="51" fill="white" />
+            </clipPath>
+        </defs>
+        </svg>
+    </a>
+  </section>
+
+  <section class="team">
+    <div class="team__inner" data-aos="fade-up" data-aos-duration="900">
+      <span class="team__badge badge">
+        <span class="badge__dot"></span>
+        YOUR PERSONAL LOGISTICS TEAM
+      </span>
+      <h2 class="team__title">We build a dedicated dispatch department for you without the headache of hiring and managing.</h2>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <a href="/" class="advantages__logo" data-aos="fade-up" data-aos-duration="900">
+      <img src="assets/img/logo.svg" alt="TruckDispatch" width="151" height="20">
+    </a>
+    <a href="#" class="advantages__callback callback" data-aos="fade-up" data-aos-duration="900">
+      <span class="callback__text">Call me Back</span>
+      <svg width="51" height="51" class="callback__icon" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip_adv_call)">
+          <path d="M43.5285 7.46594C33.5687 -2.49092 17.4229 -2.48853 7.46606 7.47142C-2.49079 17.4314 -2.4884 33.577 7.47154 43.5339C17.4315 53.4907 33.5772 53.4884 43.534 43.5284C48.3159 38.7451 51.0015 32.258 51 25.4944C50.9986 18.732 48.3111 12.247 43.5285 7.46594ZM38.6189 35.5211C38.6178 35.5222 38.6167 35.5234 38.6155 35.5245V35.516L37.3235 36.7995C35.6525 38.4916 33.219 39.1877 30.9059 38.6355C28.5756 38.0117 26.3603 37.0188 24.344 35.6945C22.4707 34.4973 20.7347 33.0978 19.1675 31.521C17.7254 30.0895 16.4299 28.5177 15.2999 26.829C14.064 25.0119 13.0857 23.0325 12.3929 20.947C11.5988 18.497 12.2569 15.8086 14.093 14.0025L15.6059 12.4895C16.0266 12.067 16.7101 12.0655 17.1325 12.4861C17.1336 12.4872 17.1348 12.4883 17.1359 12.4895L21.9129 17.2665C22.3354 17.6872 22.3369 18.3707 21.9163 18.7931C21.9152 18.7942 21.9141 18.7953 21.9129 18.7965L19.1079 21.6015C18.3031 22.3976 18.2019 23.6626 18.8699 24.5765C19.8845 25.9689 21.0072 27.279 22.2275 28.4951C23.588 29.8615 25.0671 31.1045 26.6474 32.2096C27.5606 32.8465 28.7985 32.7391 29.5884 31.9546L32.2999 29.2006C32.7205 28.7781 33.404 28.7766 33.8265 29.1972C33.8276 29.1983 33.8287 29.1994 33.8299 29.2006L38.6154 33.9946C39.038 34.4151 39.0395 35.0986 38.6189 35.5211Z" fill="#FFEB23"/>
+        </g>
+        <defs>
+          <clipPath id="clip_adv_call">
+            <rect width="51" height="51" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+    <div class="advantages__inner" data-aos="fade-up" data-aos-duration="900">
+      <div class="advantages__left">
+        <h2 class="advantages__title">Our Advantages</h2>
+        <div class="advantages__nav">
+          <button class="advantages__btn advantages__btn--prev">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 4.97708H2.70251L6.43929 1.04929L5.44102 0L0 5.71915L5.44102 11.4383L6.43929 10.389L2.70251 6.46123H13V4.97708Z" fill="currentColor" />
+            </svg>
+          </button>
+          <button class="advantages__btn advantages__btn--next">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6.46115L10.2975 6.46115L6.56071 10.3889L7.55898 11.4382L13 5.71908L7.55898 -7.43866e-05L6.56071 1.04922L10.2975 4.97701L0 4.97701V6.46115Z" fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="advantages__right">
+        <div class="swiper advantages__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide advantages__card card">
+              <img src="assets/img/advatages-svg-1.svg" alt="" class="card__icon" width="50" height="50">
+              <h3 class="card__title">Exclusive Team</h3>
+              <p class="card__desc">Dispatchers work only with your trucks, not distracted by others</p>
+            </div>
+            <div class="swiper-slide advantages__card card">
+              <img src="assets/img/advatages-svg-2.svg" alt="" class="card__icon" width="50" height="50">
+              <h3 class="card__title">Best Rates</h3>
+              <p class="card__desc">We know brokers always have more money, and we know how to negotiate</p>
+            </div>
+            <div class="swiper-slide advantages__card card">
+              <img src="assets/img/advatages-svg-3.svg" alt="" class="card__icon" width="50" height="50">
+              <h3 class="card__title">Transparency</h3>
+              <p class="card__desc">You always see what loads we find for you. No forced dispatch</p>
+            </div>
+            <div class="swiper-slide advantages__card card">
+              <img src="assets/img/advatages-svg-4.svg" alt="" class="card__icon" width="50" height="50">
+              <h3 class="card__title">24/7 Support</h3>
+              <p class="card__desc">We solve any issues on the road, from delays to broker conflicts, even at night</p>
+            </div>
+            <div class="swiper-slide advantages__card card">
+              <img src="assets/img/advatages-svg-5.svg" alt="" class="card__icon" width="50" height="50">
+              <h3 class="card__title">Full Cycle</h3>
+              <p class="card__desc">From load search to sending invoices and receiving payment - we handle it all</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALM ========== -->
+  <section class="calm" data-aos="fade-up" data-aos-duration="900">
+    <div class="calm__top">
+      <h2 class="calm__title">Stay calm on the road</h2>
+      <p class="calm__desc">Improvement in cognitive functions from 10% to 400% <br> High adaptation of improvements to real professional activity</p>
+    </div>
+
+    <div class="calm__slider">
+      <div class="swiper calm__swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide calm-card calm-card--1">
+            <div class="calm-card__footer">
+              <h3 class="calm-card__title">Accounting Support</h3>
+              <div class="calm-card__tags">
+                <span class="calm-card__tag">Handling Rate Confirmations & BOL/POD</span>
+                <span class="calm-card__tag">Invoice creation & submission</span>
+                <span class="calm-card__tag">Payment tracking & control</span>
+                <span class="calm-card__tag">Weekly & monthly income reports</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide calm-card calm-card--2">
+            <div class="calm-card__footer">
+              <h3 class="calm-card__title">Professional Dispatch</h3>
+              <div class="calm-card__tags">
+                <span class="calm-card__tag">Best load searching & booking</span>
+                <span class="calm-card__tag">Negotiations & work with vetted brokers</span>
+                <span class="calm-card__tag">24/7 driver communication</span>
+                <span class="calm-card__tag">Route planning considering costs and risks</span>
+                <span class="calm-card__tag">Handling compensations: detention, layover</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide calm-card calm-card--3">
+            <div class="calm-card__footer">
+              <h3 class="calm-card__title">Factoring Services</h3>
+              <div class="calm-card__tags">
+                <span class="calm-card__tag">Connection to trusted factoring partners</span>
+                <span class="calm-card__tag">Fast application review & approval</span>
+                <span class="calm-card__tag">Direct submission of documents for funding</span>
+                <span class="calm-card__tag">Competitive rates through our partner channel</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="calm__btn calm__btn--prev" aria-label="Previous">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 2L9.4 3.4L3.8 9H20V11H3.8L9.4 16.6L8 18L0 10L8 2Z" fill="currentColor"/>
+        </svg>
+      </button>
+      <button class="calm__btn calm__btn--next" aria-label="Next">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L10.6 3.4L16.2 9H0V11H16.2L10.6 16.6L12 18L20 10L12 2Z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========== STEPS ========== -->
+  <section class="steps">
+    <span class="steps__badge" data-aos="fade-up" data-aos-duration="900">Just 3 Steps</span>
+    <h2 class="steps__title" data-aos="fade-up" data-aos-duration="900">Getting Started is Easier<br>Than You Think.</h2>
+    <div class="steps__cards">
+
+      <div class="steps__card step-card step-card--short">
+        <span class="step-card__num">01</span>
+        <span class="step-card__title">You Submit<br>an Application</span>
+      </div>
+
+      <div class="steps__card step-card step-card--short">
+        <span class="step-card__num">02</span>
+        <span class="step-card__title">We Do a Free Audit &amp;<br>Build a Plan</span>
+      </div>
+
+      <div class="steps__card step-card">
+        <div class="step-card__head">
+          <span class="step-card__num">03</span>
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.271 20.19L19.457 20.1229L19.7254 24.867L26.1993 17.6167L27.0944 18.4159L20.6205 25.6663L25.3647 25.3979L25.4318 26.5839L18.6544 26.9674L18.271 20.19Z" fill="white"/>
+            <rect x="44.6426" y="0.5" width="44.1421" height="44.1421" rx="22.0711" transform="rotate(90 44.6426 0.5)" stroke="white" stroke-opacity="0.35"/>
+          </svg>
+        </div>
+        <div class="step-card__foot">
+          <span class="step-card__title">We Launch Your<br>Dedicated Team</span>
+          <p class="step-card__desc">We analyze your current situation and show where you're losing money and where there is growth potential.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+    <!-- ========== TRUCK SELECTOR ========== -->
+  <section class="truck-selector" data-aos="fade-up" data-aos-duration="900">
+
+    <!-- LEFT COLUMN -->
+    <div class="truck-selector__left">
+      <div class="truck-selector__header">
+        <h2 class="truck-selector__title">Select your <span class="truck-selector__accent">track type</span></h2>
+        <a href="#" class="hero__btn-audit">Get a Free Audit</a>
+      </div>
+      <div class="truck-selector__divider"></div>
+      <div class="truck-selector__media">
+        <img src="assets/img/truck-card-1.jpg" class="truck-selector__img is-active" data-index="0" alt="Dry Van Trailer">
+        <img src="assets/img/truck-card-2.jpg" class="truck-selector__img" data-index="1" alt="Conestoga Trailer">
+        <img src="assets/img/truck-card-3.jpg" class="truck-selector__img" data-index="2" alt="Reefer Trailer">
+        <img src="assets/img/truck-card-4.jpg" class="truck-selector__img" data-index="3" alt="Flatbed Trailer">
+        <img src="assets/img/truck-card-5.jpg" class="truck-selector__img" data-index="4" alt="Stepdeck Trailer">
+        <img src="assets/img/truck-card-6.jpg" class="truck-selector__img" data-index="5" alt="Box Truck">
+        <img src="assets/img/truck-card-7.jpg" class="truck-selector__img" data-index="6" alt="Car Hauler Trailer">
+        <img src="assets/img/truck-card-8.jpg" class="truck-selector__img" data-index="7" alt="Power Only">
+        <img src="assets/img/truck-card-9.jpg" class="truck-selector__img" data-index="8" alt="Hotshot">
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="truck-selector__right">
+      <button class="truck-item is-active" data-index="0">
+        <div class="truck-item__meta">
+          <span class="truck-item__num">01</span>
+          <img src="assets/img/truck-type-1.svg" class="truck-item__icon" alt="">
+        </div>
+        <span class="truck-item__name">Dry Van Trailer</span>
+      </button>
+      <button class="truck-item" data-index="1">
+        <div class="truck-item__meta">
+          <span class="truck-item__num">02</span>
+          <img src="assets/img/truck-type-2.svg" class="truck-item__icon" alt="">
+        </div>
+        <span class="truck-item__name">Conestoga Trailer</span>
+      </button>
+      <button class="truck-item" data-index="2">
+        <div class="truck-item__meta">
+          <span class="truck-item__num">03</span>
+          <img src="assets/img/truck-type-3.svg" class="truck-item__icon" alt="">
+        </div>
+        <span class="truck-item__name">Reefer Trailer</span>
+      </button>
+      <button class="truck-item" data-index="3">
+        <div class="truck-item__meta">
+          <span class="truck-item__num">04</span>
+          <img src="assets/img/truck-type-4.svg" class="truck-item__icon" alt="">
+        </div>
+        <span class="truck-item__name">Flatbed Trailer</span>
+      </button>
+      <button class="truck-item" data-index="4">
+        <div class="truck-item__meta">
+          <span class="truck-item__num">05</span>
+          <img src="assets/img/truck-type-5.svg" class="truck-item__icon" alt="">
+        </div>
+        <span class="truck-item__name">Stepdeck Trailer</span>
+      </button>
+      <button class="truck-item" data-index="5">
+        <div class="truck-item__meta">
+          <span class="truck-item__num">06</span>
+          <img src="assets/img/truck-type-6.svg" class="truck-item__icon" alt="">
+        </div>
+        <span class="truck-item__name">Box Truck</span>
+      </button>
+      <button class="truck-item" data-index="6">
+        <div class="truck-item__meta">
+          <span class="truck-item__num">07</span>
+          <img src="assets/img/truck-type-7.svg" class="truck-item__icon" alt="">
+        </div>
+        <span class="truck-item__name">Car Hauler Trailer</span>
+      </button>
+      <button class="truck-item" data-index="7">
+        <div class="truck-item__meta">
+          <span class="truck-item__num">08</span>
+          <img src="assets/img/truck-type-8.svg" class="truck-item__icon" alt="">
+        </div>
+        <span class="truck-item__name">Power Only</span>
+      </button>
+      <button class="truck-item" data-index="8">
+        <div class="truck-item__meta">
+          <span class="truck-item__num">09</span>
+          <img src="assets/img/truck-type-9.svg" class="truck-item__icon" alt="">
+        </div>
+        <span class="truck-item__name">Hotshot</span>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- ========== NUMBERS ========== -->
+  <section class="numbers" data-aos="fade-up" data-aos-duration="900">
+    <div class="numbers__top">
+      <h2 class="numbers__title">Our Numbers</h2>
+      <a href="#" class="hero__btn-audit numbers__btn">Request Audit &amp; Strategy</a>
+    </div>
+
+    <div class="numbers__grid">
+
+      <div class="numbers-card">
+        <div class="numbers-card__icon">
+          <img src="assets/img/numbers-svg-1.svg" alt="" width="67" height="67">
+        </div>
+        <div class="numbers-card__body">
+          <h3 class="numbers-card__num">80M+</h3>
+          <span class="numbers-card__desc">Miles dispatched<br>successfully</span>
+        </div>
+      </div>
+
+      <div class="numbers-card">
+        <div class="numbers-card__icon">
+          <img src="assets/img/numbers-svg-2.svg" alt="" width="67" height="67">
+        </div>
+        <div class="numbers-card__body">
+          <h3 class="numbers-card__num">10K+</h3>
+          <span class="numbers-card__desc">Loads booked<br>every year</span>
+        </div>
+      </div>
+
+      <div class="numbers-card">
+        <div class="numbers-card__icon">
+          <img src="assets/img/numbers-svg-3.svg" alt="" width="67" height="67">
+        </div>
+        <div class="numbers-card__body">
+          <h3 class="numbers-card__num">500+</h3>
+          <span class="numbers-card__desc">Trusted owner-<br>operators</span>
+        </div>
+      </div>
+
+      <div class="numbers-card">
+        <div class="numbers-card__icon">
+          <img src="assets/img/numbers-svg-4.svg" alt="" width="67" height="67">
+        </div>
+        <div class="numbers-card__body">
+          <h3 class="numbers-card__num">98%</h3>
+          <span class="numbers-card__desc">On-time load<br>planning</span>
+        </div>
+      </div>
+
+      <div class="numbers-card">
+        <div class="numbers-card__icon">
+          <img src="assets/img/numbers-svg-5.svg" alt="" width="67" height="67">
+        </div>
+        <div class="numbers-card__body">
+          <h3 class="numbers-card__num">24/7</h3>
+          <span class="numbers-card__desc">Dispatcher<br>support available</span>
+        </div>
+      </div>
+
+      <div class="numbers-card">
+        <div class="numbers-card__icon">
+          <img src="assets/img/numbers-svg-6.svg" alt="" width="67" height="67">
+        </div>
+        <div class="numbers-card__body">
+          <h3 class="numbers-card__num">$50M+</h3>
+          <span class="numbers-card__desc">Freight revenue<br>managed</span>
+        </div>
+      </div>
+
+      <div class="numbers-card">
+        <div class="numbers-card__icon">
+          <img src="assets/img/numbers-svg-7.svg" alt="" width="67" height="67">
+        </div>
+        <div class="numbers-card__body">
+          <h3 class="numbers-card__num">100%</h3>
+          <span class="numbers-card__desc">Focus on maximizing<br>your revenue</span>
+        </div>
+      </div>
+
+      <div class="numbers-card">
+        <div class="numbers-card__icon">
+          <img src="assets/img/numbers-svg-8.svg" alt="" width="67" height="67">
+        </div>
+        <div class="numbers-card__body">
+          <h3 class="numbers-card__num">50+</h3>
+          <span class="numbers-card__desc">States nationwide<br>coverage</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta">
+    <video class="cta__video" autoplay muted loop playsinline>
+      <source src="assets/vid/cta.mp4" type="video/mp4">
+    </video>
+
+    <div class="cta__top" data-aos="fade-up" data-aos-duration="900">
+      <a href="/" class="cta__logo">
+        <img src="assets/img/logo.svg" alt="TruckDispatch" width="151" height="20">
+      </a>
+      <a href="#" class="cta__callback callback">
+        <span class="callback__text">Call me Back</span>
+        <svg width="51" height="51" class="callback__icon" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip_cta_call)">
+            <path d="M43.5285 7.46594C33.5687 -2.49092 17.4229 -2.48853 7.46606 7.47142C-2.49079 17.4314 -2.4884 33.577 7.47154 43.5339C17.4315 53.4907 33.5772 53.4884 43.534 43.5284C48.3159 38.7451 51.0015 32.258 51 25.4944C50.9986 18.732 48.3111 12.247 43.5285 7.46594ZM38.6189 35.5211C38.6178 35.5222 38.6167 35.5234 38.6155 35.5245V35.516L37.3235 36.7995C35.6525 38.4916 33.219 39.1877 30.9059 38.6355C28.5756 38.0117 26.3603 37.0188 24.344 35.6945C22.4707 34.4973 20.7347 33.0978 19.1675 31.521C17.7254 30.0895 16.4299 28.5177 15.2999 26.829C14.064 25.0119 13.0857 23.0325 12.3929 20.947C11.5988 18.497 12.2569 15.8086 14.093 14.0025L15.6059 12.4895C16.0266 12.067 16.7101 12.0655 17.1325 12.4861C17.1336 12.4872 17.1348 12.4883 17.1359 12.4895L21.9129 17.2665C22.3354 17.6872 22.3369 18.3707 21.9163 18.7931C21.9152 18.7942 21.9141 18.7953 21.9129 18.7965L19.1079 21.6015C18.3031 22.3976 18.2019 23.6626 18.8699 24.5765C19.8845 25.9689 21.0072 27.279 22.2275 28.4951C23.588 29.8615 25.0671 31.1045 26.6474 32.2096C27.5606 32.8465 28.7985 32.7391 29.5884 31.9546L32.2999 29.2006C32.7205 28.7781 33.404 28.7766 33.8265 29.1972C33.8276 29.1983 33.8287 29.1994 33.8299 29.2006L38.6154 33.9946C39.038 34.4151 39.0395 35.0986 38.6189 35.5211Z" fill="#FFEB23"/>
+          </g>
+          <defs>
+            <clipPath id="clip_cta_call">
+              <rect width="51" height="51" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </div>
+
+    <div class="cta__bottom" data-aos="fade-up" data-aos-duration="900">
+      <div class="cta__info">
+        <h2 class="cta__title">Ready to earn more on every load?</h2>
+        <span class="cta__desc">Fill out the form, and we will conduct a free audit</span>
+      </div>
+
+      <div class="cta__form-wrap">
+        <form class="cta__form" novalidate>
+          <div class="cta__row">
+            <input class="cta__input cta__input--name"    type="text" name="name"    placeholder="Name">
+            <input class="cta__input cta__input--phone"   type="tel"  name="phone"   placeholder="Phone">
+            <div class="cta__dropdown">
+              <button type="button" class="cta__dropdown-trigger">
+                <span class="cta__dropdown-value">Truck Type</span>
+                <svg class="cta__dropdown-arrow" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                  <path d="M1 1l6 6 6-6" stroke="#2a2a2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <ul class="cta__dropdown-list">
+                <li class="cta__dropdown-item" data-value="dry-van">Dry Van Trailer</li>
+                <li class="cta__dropdown-item" data-value="conestoga">Conestoga Trailer</li>
+                <li class="cta__dropdown-item" data-value="reefer">Reefer Trailer</li>
+                <li class="cta__dropdown-item" data-value="flatbed">Flatbed Trailer</li>
+                <li class="cta__dropdown-item" data-value="stepdeck">Stepdeck Trailer</li>
+                <li class="cta__dropdown-item" data-value="box-truck">Box Truck</li>
+                <li class="cta__dropdown-item" data-value="car-hauler">Car Hauler Trailer</li>
+                <li class="cta__dropdown-item" data-value="power-only">Power Only</li>
+                <li class="cta__dropdown-item" data-value="hotshot">Hotshot</li>
+              </ul>
+              <input type="hidden" name="truck-type" value="">
+            </div>
+          </div>
+          <div class="cta__row">
+            <input class="cta__input cta__input--company" type="text"  name="company" placeholder="Company">
+            <input class="cta__input cta__input--email"   type="email" name="email"   placeholder="Email">
+            <input class="cta__input cta__input--trucks"  type="text"  name="trucks"  placeholder="Number of Trucks">
+          </div>
+          <div class="cta__footer">
+            <a href="#" class="hero__btn-audit cta__btn">Request Audit &amp; Strategy</a>
+            <span class="cta__disclaimer">By clicking the button, you agree to data processing. All applications are automatically sent to our CRM for fast processing.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+
+    <div class="footer__top">
+      <nav class="footer__nav">
+        <a href="#" class="footer__nav-link">About</a>
+        <a href="#" class="footer__nav-link">Trucks</a>
+        <a href="#" class="footer__nav-link">Services</a>
+        <a href="#" class="footer__nav-link">Contact</a>
+      </nav>
+      <div class="footer__aside">
+        <img src="assets/img/footer-logo.svg" alt="" width="57" height="35">
+        <button class="footer__scroll-top" id="scrollTop" aria-label="Scroll to top">
+          <img src="assets/img/footer-up.svg" alt="" width="14" height="14">
+        </button>
+      </div>
+    </div>
+
+    <div class="footer__divider"></div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-info">
+        <a href="#" class="hero__btn-audit">Request Audit &amp; Strategy</a>
+        <div class="footer__contact">
+          <div class="footer__office">
+            <span class="footer__office-label">Office</span>
+            <img src="assets/img/footer-star.svg" alt="" width="19" height="19">
+          </div>
+          <address class="footer__address">georgia, tbilisi, saburtalo district, bakhtrioni street, N 22, N75</address>
+        </div>
+      </div>
+      <div class="footer__bottom-row">
+        <div class="footer__copy">
+          <span>© 2026</span>
+          <a href="#" class="footer__policy">Privacy Policy</a>
+        </div>
+        <div class="footer__socials">
+          <a href="#" class="footer__social">
+            <span class="footer__social-name">telegram</span>
+            <img src="assets/img/socials.svg" alt="" width="21" height="21">
+          </a>
+          <a href="#" class="footer__social">
+            <span class="footer__social-name">whatsapp</span>
+            <img src="assets/img/socials.svg" alt="" width="21" height="21">
+          </a>
+          <a href="#" class="footer__social">
+            <span class="footer__social-name">instagram</span>
+            <img src="assets/img/socials.svg" alt="" width="21" height="21">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
