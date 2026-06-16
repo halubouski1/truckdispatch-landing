@@ -29,9 +29,13 @@ h1, h2, h3, h4, h5, h6 {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #000;
+  background-color: transparent;
   transform: translateY(0);
   transition: transform 0.35s ease, background-color 0.35s ease;
+}
+
+.header.is-scrolled {
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .header.is-hidden {
@@ -129,6 +133,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 17px;
   line-height: 1;
   color: #fff;
+}
+
+.header__burger,
+.mobile-menu {
+  display: none;
 }
 
 /* ========== HERO ========== */
@@ -456,6 +465,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 256px;
 }
 
+.advantages__nav--mobile {
+  display: none;
+}
+
 /* ========== CALM ========== */
 
 .calm {
@@ -721,6 +734,10 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
+.truck-selector__hint {
+  display: none;
+}
+
 .truck-selector__header {
   display: flex;
   justify-content: space-between;
@@ -864,6 +881,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 68px 20px 40px;
 }
 
+.numbers__nav {
+  display: none;
+}
+
 .numbers__grid {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -876,6 +897,11 @@ h1, h2, h3, h4, h5, h6 {
 .numbers-card {
   display: flex;
   align-items: center;
+}
+
+.numbers-card.swiper-slide {
+  width: auto;
+  flex-shrink: 1;
 }
 
 .numbers-card__icon {
@@ -1297,6 +1323,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 25px;
   line-height: 100%;
   color: #141414;
+}
+
+.footer__logo-mobile {
+  display: none;
+}
+
+.footer__contact-links {
+  display: none;
 }
 
 /* ========== POPUP ========== */

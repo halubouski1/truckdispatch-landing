@@ -44,8 +44,65 @@
         <img src="assets/img/phone-icon.svg" alt="" class="phone__icon" width="27" height="27">
         <span class="phone__number">(305)-428-2020</span>
       </a>
+      <button class="header__burger" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="26" height="26" fill="#FFEB23"/>
+          <rect x="7" y="8" width="12" height="1.5" fill="#0D0D0D"/>
+          <rect x="7" y="12" width="12" height="1.5" fill="#0D0D0D"/>
+          <rect x="7" y="16" width="12" height="1.5" fill="#0D0D0D"/>
+        </svg>
+      </button>
     </div>
   </header>
+
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <a href="/" class="mobile-menu__logo">
+        <img src="assets/img/logo.svg" alt="TruckDispatch" width="151" height="20">
+      </a>
+      <button class="mobile-menu__close" type="button" aria-label="Close menu">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.34414 16C0.999815 16 0.655493 15.8694 0.393887 15.6058C-0.131296 15.0806 -0.131296 14.2292 0.393887 13.704L13.704 0.393878C14.2295 -0.131293 15.0809 -0.131293 15.6061 0.393878C16.1313 0.91905 16.1313 1.77048 15.6061 2.29598L2.2957 15.6058C2.03049 15.8694 1.68649 16 1.34414 16Z" fill="white"/>
+          <path d="M14.654 16C14.31 16 13.9657 15.8693 13.7041 15.6058L0.394129 2.29615C-0.131376 1.77092 -0.131376 0.919395 0.394129 0.394167C0.919305 -0.131389 1.77075 -0.131389 2.29592 0.394167L15.6059 13.7054C16.1314 14.2306 16.1314 15.0822 15.6059 15.6074C15.3426 15.8693 14.9983 16 14.654 16Z" fill="white"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <a href="/" class="mobile-menu__link">
+        <span class="mobile-menu__num">01</span>
+        <span class="mobile-menu__text">HOME</span>
+      </a>
+      <a href="/services" class="mobile-menu__link">
+        <span class="mobile-menu__num">02</span>
+        <span class="mobile-menu__text">SERVICES</span>
+      </a>
+      <a href="/about" class="mobile-menu__link">
+        <span class="mobile-menu__num">03</span>
+        <span class="mobile-menu__text">ABOUT US</span>
+      </a>
+      <a href="/coupons" class="mobile-menu__link">
+        <span class="mobile-menu__num">04</span>
+        <span class="mobile-menu__text">COUPONS</span>
+      </a>
+      <a href="/reviews" class="mobile-menu__link">
+        <span class="mobile-menu__num">05</span>
+        <span class="mobile-menu__text">REVIEWS</span>
+      </a>
+      <a href="/contact" class="mobile-menu__link">
+        <span class="mobile-menu__num">06</span>
+        <span class="mobile-menu__text">CONTACT US</span>
+      </a>
+    </nav>
+
+    <div class="mobile-menu__bottom">
+      <div class="mobile-menu__divider"></div>
+      <a href="tel:+13054282020" class="mobile-menu__phone">
+        <img src="assets/img/phone-icon.svg" alt="" width="39" height="39">
+        <span>(305)-428-2020</span>
+      </a>
+    </div>
+  </aside>
 
   <section class="hero">
     <video class="hero__video" autoplay muted loop playsinline>
@@ -148,6 +205,18 @@
           </div>
         </div>
       </div>
+        <div class="advantages__nav advantages__nav--mobile">
+          <button class="advantages__btn advantages__btn--prev">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 4.97708H2.70251L6.43929 1.04929L5.44102 0L0 5.71915L5.44102 11.4383L6.43929 10.389L2.70251 6.46123H13V4.97708Z" fill="currentColor" />
+            </svg>
+          </button>
+          <button class="advantages__btn advantages__btn--next">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6.46115L10.2975 6.46115L6.56071 10.3889L7.55898 11.4382L13 5.71908L7.55898 -7.43866e-05L6.56071 1.04922L10.2975 4.97701L0 4.97701V6.46115Z" fill="currentColor" />
+            </svg>
+          </button>
+        </div>
     </div>
   </section>
 
@@ -201,17 +270,18 @@
 
         </div>
       </div>
-
-      <button class="calm__btn calm__btn--prev" aria-label="Previous">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 2L9.4 3.4L3.8 9H20V11H3.8L9.4 16.6L8 18L0 10L8 2Z" fill="currentColor"/>
-        </svg>
-      </button>
-      <button class="calm__btn calm__btn--next" aria-label="Next">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2L10.6 3.4L16.2 9H0V11H16.2L10.6 16.6L12 18L20 10L12 2Z" fill="currentColor"/>
-        </svg>
-      </button>
+      <div class="calm__nav">
+        <button class="calm__btn calm__btn--prev" aria-label="Previous">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 2L9.4 3.4L3.8 9H20V11H3.8L9.4 16.6L8 18L0 10L8 2Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <button class="calm__btn calm__btn--next" aria-label="Next">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L10.6 3.4L16.2 9H0V11H16.2L10.6 16.6L12 18L20 10L12 2Z" fill="currentColor"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -228,7 +298,7 @@
 
       <div class="steps__card step-card step-card--short">
         <span class="step-card__num">02</span>
-        <span class="step-card__title">We Do a Free Audit &amp;<br>Build a Plan</span>
+        <span class="step-card__title">We Do a Free Audit &amp;<br> Build a Plan</span>
       </div>
 
       <div class="steps__card step-card">
@@ -255,6 +325,16 @@
       <div class="truck-selector__header">
         <h2 class="truck-selector__title">Select your <span class="truck-selector__accent">track type</span></h2>
         <a href="#" class="hero__btn-audit">Get a Free Audit</a>
+        <div class="truck-selector__hint">
+          <div class="truck-selector-svg">
+            <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.54867 17.2042C6.70164 18.3608 8.23768 19 9.86852 19C12.6979 19 15 16.6906 15 13.8524V7.12215C15 6.2509 14.2908 5.53945 13.4223 5.53945C13.0961 5.53945 12.7965 5.63837 12.5424 5.80957C12.3262 5.19323 11.7383 4.7481 11.0518 4.7481C10.7257 4.7481 10.426 4.84702 10.1719 5.01822C9.95575 4.40188 9.36789 3.95675 8.68142 3.95675C8.39318 3.95675 8.12389 4.03284 7.89254 4.1698V1.5827C7.89254 0.711454 7.18331 0 6.31479 0C5.44627 0 4.73704 0.711454 4.73704 1.5827V10.8392L2.56764 9.7511C2.24147 9.5837 1.87737 9.49619 1.50948 9.49619C0.678888 9.49619 0 10.1734 0 11.0142C0 11.4175 0.155499 11.798 0.439949 12.0833L5.54867 17.2042ZM1.50948 10.2875C1.75221 10.2875 1.99874 10.3446 2.21492 10.4549L4.95702 11.8284C5.07838 11.8893 5.2263 11.8817 5.34008 11.8132C5.45765 11.7409 5.52592 11.6115 5.52592 11.4746V1.57889C5.52592 1.14137 5.87864 0.787545 6.31479 0.787545C6.75095 0.787545 7.10367 1.14137 7.10367 1.57889V9.10052C7.10367 9.32118 7.28192 9.49619 7.49811 9.49619C7.71429 9.49619 7.89254 9.31738 7.89254 9.10052V5.53564C7.89254 5.09812 8.24526 4.74429 8.68142 4.74429C9.11757 4.74429 9.47029 5.09812 9.47029 5.53564V9.10052C9.47029 9.32118 9.64855 9.49619 9.86473 9.49619C10.0809 9.49619 10.2592 9.31738 10.2592 9.10052V6.3308C10.2592 5.89327 10.6119 5.53945 11.048 5.53945C11.4842 5.53945 11.8369 5.89327 11.8369 6.3308V9.10052C11.8369 9.32118 12.0152 9.49619 12.2314 9.49619C12.4475 9.49619 12.6258 9.31738 12.6258 9.10052V7.12215C12.6258 6.68462 12.9785 6.3308 13.4147 6.3308C13.8508 6.3308 14.2035 6.68462 14.2035 7.12215V13.8524C14.2035 16.2531 12.2541 18.2087 9.86094 18.2087C8.43869 18.2087 7.10367 17.6532 6.09861 16.645L1.00126 11.524C0.864729 11.3871 0.792668 11.2082 0.792668 11.0104C0.792668 10.6109 1.11504 10.2875 1.50948 10.2875Z" fill="white" />
+            </svg>
+          </div>
+          <span class="truck-selector__hint-text">
+            Click on the item
+          </span>
+        </div>
       </div>
       <div class="truck-selector__divider"></div>
       <div class="truck-selector__media">
@@ -346,9 +426,10 @@
       <a href="#" class="hero__btn-audit numbers__btn">Request Audit &amp; Strategy</a>
     </div>
 
-    <div class="numbers__grid">
+    <div class="numbers__slider swiper">
+      <div class="numbers__grid swiper-wrapper">
 
-      <div class="numbers-card">
+      <div class="numbers-card swiper-slide">
         <div class="numbers-card__icon">
           <img src="assets/img/numbers-svg-1.svg" alt="" width="67" height="67">
         </div>
@@ -358,7 +439,7 @@
         </div>
       </div>
 
-      <div class="numbers-card">
+      <div class="numbers-card swiper-slide">
         <div class="numbers-card__icon">
           <img src="assets/img/numbers-svg-2.svg" alt="" width="67" height="67">
         </div>
@@ -368,7 +449,7 @@
         </div>
       </div>
 
-      <div class="numbers-card">
+      <div class="numbers-card swiper-slide">
         <div class="numbers-card__icon">
           <img src="assets/img/numbers-svg-3.svg" alt="" width="67" height="67">
         </div>
@@ -378,7 +459,7 @@
         </div>
       </div>
 
-      <div class="numbers-card">
+      <div class="numbers-card swiper-slide">
         <div class="numbers-card__icon">
           <img src="assets/img/numbers-svg-4.svg" alt="" width="67" height="67">
         </div>
@@ -388,7 +469,7 @@
         </div>
       </div>
 
-      <div class="numbers-card">
+      <div class="numbers-card swiper-slide">
         <div class="numbers-card__icon">
           <img src="assets/img/numbers-svg-5.svg" alt="" width="67" height="67">
         </div>
@@ -398,7 +479,7 @@
         </div>
       </div>
 
-      <div class="numbers-card">
+      <div class="numbers-card swiper-slide">
         <div class="numbers-card__icon">
           <img src="assets/img/numbers-svg-6.svg" alt="" width="67" height="67">
         </div>
@@ -408,7 +489,7 @@
         </div>
       </div>
 
-      <div class="numbers-card">
+      <div class="numbers-card swiper-slide">
         <div class="numbers-card__icon">
           <img src="assets/img/numbers-svg-7.svg" alt="" width="67" height="67">
         </div>
@@ -418,7 +499,7 @@
         </div>
       </div>
 
-      <div class="numbers-card">
+      <div class="numbers-card swiper-slide">
         <div class="numbers-card__icon">
           <img src="assets/img/numbers-svg-8.svg" alt="" width="67" height="67">
         </div>
@@ -428,7 +509,20 @@
         </div>
       </div>
 
+      </div>
     </div>
+    <div class="numbers__nav">
+        <button class="numbers__btn-slider numbers__btn-slider--prev" type="button" aria-label="Previous">
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 4.97708H2.70251L6.43929 1.04929L5.44102 0L0 5.71915L5.44102 11.4383L6.43929 10.389L2.70251 6.46123H13V4.97708Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <button class="numbers__btn-slider numbers__btn-slider--next" type="button" aria-label="Next">
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6.46115L10.2975 6.46115L6.56071 10.3889L7.55898 11.4382L13 5.71908L7.55898 -7.43866e-05L6.56071 1.04922L10.2975 4.97701L0 4.97701V6.46115Z" fill="currentColor"/>
+          </svg>
+        </button>
+      </div>
   </section>
 
   <!-- ========== CTA ========== -->
@@ -512,7 +606,7 @@
         <a href="#" class="footer__nav-link">Contact</a>
       </nav>
       <div class="footer__aside">
-        <img src="assets/img/footer-logo.svg" alt="" width="57" height="35">
+        <img class="footer__logo" src="assets/img/footer-logo.svg" alt="" width="57" height="35">
         <button class="footer__scroll-top" id="scrollTop" aria-label="Scroll to top">
           <img src="assets/img/footer-up.svg" alt="" width="14" height="14">
         </button>
@@ -530,9 +624,44 @@
             <img src="assets/img/footer-star.svg" alt="" width="19" height="19">
           </div>
           <address class="footer__address">georgia, tbilisi, saburtalo district, bakhtrioni street, N 22, N75</address>
+          <div class="footer__contact-links">
+            <a href="" class="footer__contact-link">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_182_305)">
+                  <path d="M13.8627 11.3282L13.8556 11.3876C12.1147 10.5199 11.9327 10.4043 11.7078 10.7416C11.5519 10.9751 11.0975 11.5047 10.9605 11.6615C10.822 11.8158 10.6842 11.8277 10.4491 11.7208C10.2116 11.6021 9.4492 11.3527 8.5467 10.5452C7.8437 9.91584 7.37187 9.14397 7.23254 8.90647C7.00058 8.50589 7.48587 8.44889 7.92762 7.61289C8.00679 7.44664 7.96641 7.31601 7.90783 7.19805C7.84845 7.0793 7.37583 5.91555 7.17791 5.45164C6.98791 4.9893 6.79237 5.04789 6.64591 5.04789C6.18991 5.0083 5.85662 5.01464 5.56291 5.32022C4.28516 6.72464 4.60737 8.17339 5.70066 9.71397C7.84925 12.526 8.994 13.0437 11.0872 13.7626C11.6524 13.9423 12.1678 13.9169 12.5755 13.8583C13.0299 13.7863 13.9744 13.2876 14.1715 12.7294C14.3734 12.1713 14.3734 11.7082 14.314 11.6013C14.2554 11.4944 14.1002 11.4351 13.8627 11.3282Z" fill="#222222" />
+                  <path d="M16.245 2.72982C10.1579 -3.15464 0.0839167 1.11324 0.0799583 9.41466C0.0799583 11.074 0.514583 12.6922 1.34267 14.1211L0 18.9994L5.01521 17.6915C11.2733 21.072 18.9968 16.5832 19 9.41941C19 6.90508 18.0183 4.53878 16.2331 2.7607L16.245 2.72982ZM17.4183 9.39328C17.4135 15.4361 10.7801 19.21 5.53375 16.1256L5.24875 15.9562L2.28 16.7281L3.07563 13.8425L2.88642 13.5456C-0.378417 8.34828 3.3725 1.55578 9.557 1.55578C11.6581 1.55578 13.6301 2.37516 15.1153 3.85953C16.5997 5.33124 17.4183 7.30328 17.4183 9.39328Z" fill="#222222" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_182_305">
+                    <rect width="19" height="19" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="" class="footer__contact-link">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_182_310)">
+                  <path d="M18.9871 5.58605C18.9426 4.57651 18.7793 3.88246 18.5455 3.28105C18.3042 2.64267 17.933 2.07114 17.4468 1.59601C16.9716 1.1135 16.3963 0.738563 15.7654 0.501074C15.1605 0.267211 14.47 0.103956 13.4605 0.0594446C12.4434 0.011164 12.1205 0 9.54092 0C6.96131 0 6.63843 0.011164 5.62512 0.0556749C4.61557 0.100186 3.92152 0.263586 3.32026 0.497305C2.68174 0.738563 2.1102 1.10973 1.63508 1.59601C1.15256 2.07114 0.77777 2.64644 0.540137 3.27743C0.306273 3.88246 0.143018 4.57274 0.0985071 5.58228C0.0502265 6.59937 0.0390625 6.92225 0.0390625 9.50186C0.0390625 12.0815 0.0502265 12.4043 0.0947374 13.4177C0.139248 14.4272 0.302649 15.1213 0.536512 15.7227C0.77777 16.361 1.15256 16.9326 1.63508 17.4077C2.1102 17.8902 2.68551 18.2652 3.31649 18.5026C3.92152 18.7365 4.6118 18.8998 5.62149 18.9443C6.63466 18.9889 6.95769 18.9999 9.5373 18.9999C12.1169 18.9999 12.4398 18.9889 13.4531 18.9443C14.4626 18.8998 15.1567 18.7365 15.758 18.5026C17.0349 18.009 18.0444 16.9994 18.5381 15.7227C18.7718 15.1176 18.9352 14.4272 18.9797 13.4177C19.0242 12.4043 19.0354 12.0815 19.0354 9.50186C19.0354 6.92225 19.0316 6.59937 18.9871 5.58605ZM17.2761 13.3434C17.2352 14.2713 17.0794 14.7724 16.9495 15.1065C16.6302 15.9342 15.9733 16.5911 15.1455 16.9104C14.8115 17.0403 14.3068 17.1962 13.3825 17.2369C12.3803 17.2816 12.0798 17.2926 9.54469 17.2926C7.00959 17.2926 6.70527 17.2816 5.70674 17.2369C4.77883 17.1962 4.27775 17.0403 3.9437 16.9104C3.5318 16.7582 3.15686 16.5169 2.85253 16.2014C2.53704 15.8933 2.29578 15.5221 2.14355 15.1102C2.01364 14.7762 1.85778 14.2713 1.81704 13.3472C1.77238 12.345 1.76136 12.0443 1.76136 9.50925C1.76136 6.97416 1.77238 6.66983 1.81704 5.67145C1.85778 4.74353 2.01364 4.24246 2.14355 3.90841C2.29578 3.49636 2.53704 3.12157 2.8563 2.81709C3.16425 2.5016 3.53542 2.26034 3.94747 2.10825C4.28152 1.97835 4.78637 1.82248 5.71051 1.7816C6.71266 1.73709 7.01336 1.72592 9.54832 1.72592C12.0872 1.72592 12.3877 1.73709 13.3863 1.7816C14.3142 1.82248 14.8153 1.97835 15.1493 2.10825C15.5612 2.26034 15.9361 2.5016 16.2405 2.81709C16.556 3.12519 16.7972 3.49636 16.9495 3.90841C17.0794 4.24246 17.2352 4.74716 17.2761 5.67145C17.3206 6.6736 17.3318 6.97416 17.3318 9.50925C17.3318 12.0443 17.3206 12.3413 17.2761 13.3434Z" fill="#222222" />
+                  <path d="M9.53709 4.62158C6.84251 4.62158 4.65625 6.80769 4.65625 9.50242C4.65625 12.1971 6.84251 14.3833 9.53709 14.3833C12.2318 14.3833 14.4179 12.1971 14.4179 9.50242C14.4179 6.80769 12.2318 4.62158 9.53709 4.62158ZM9.53709 12.6685C7.78898 12.6685 6.37101 11.2507 6.37101 9.50242C6.37101 7.75417 7.78898 6.33634 9.53709 6.33634C11.2853 6.33634 12.7032 7.75417 12.7032 9.50242C12.7032 11.2507 11.2853 12.6685 9.53709 12.6685Z" fill="#222222" />
+                  <path d="M15.7478 4.42754C15.7478 5.05678 15.2376 5.56699 14.6082 5.56699C13.979 5.56699 13.4688 5.05678 13.4688 4.42754C13.4688 3.79815 13.979 3.28809 14.6082 3.28809C15.2376 3.28809 15.7478 3.79815 15.7478 4.42754Z" fill="#222222" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_182_310">
+                    <rect width="19" height="19" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="" class="footer__contact-link">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.06288 11.3846L6.76513 15.5726C7.19113 15.5726 7.37563 15.3896 7.59688 15.1698L9.59413 13.2611L13.7326 16.2918C14.4916 16.7148 15.0264 16.4921 15.2311 15.5936L17.9476 2.86459L17.9484 2.86384C18.1891 1.74184 17.5426 1.30309 16.8031 1.57834L0.835633 7.69159C-0.254117 8.11459 -0.237617 8.72209 0.650383 8.99734L4.73263 10.2671L14.2149 4.33384C14.6611 4.03834 15.0669 4.20184 14.7331 4.49734L7.06288 11.3846Z" fill="#222222" />
+            </svg>
+            </a>
+          </div>
         </div>
       </div>
       <div class="footer__bottom-row">
+        <img class="footer__logo-mobile" src="assets/img/footer-logo-mobile.svg" alt="">
         <div class="footer__copy">
           <span>© 2026</span>
           <a href="#" class="footer__policy">Privacy Policy</a>
