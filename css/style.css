@@ -102,9 +102,29 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+.nav__list:hover .nav__item--active .nav__link::before {
+  opacity: 0;
+}
+
+.nav__list:hover .nav__item--active .nav__link:hover::before {
+  opacity: 1;
+}
+
 .nav__link:hover .nav__link-text,
 .nav__item--active .nav__link-text {
   color: #000;
+}
+
+.nav__list:hover .nav__item--active .nav__link-text {
+  color: #fff;
+}
+
+.nav__list:hover .nav__item--active .nav__link:hover .nav__link-text {
+  color: #000;
+}
+
+.nav__link:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .nav__link-text {
@@ -159,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  scale: 1.1;
 }
 
 .hero::after {
@@ -254,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 12px;
   padding: 17px 59px;
   padding-right: 70px;
-  border-radius: 0 1000px 1000px 1000px;
+  border-radius: 0 1000px 1000px 2000px;
   backdrop-filter: blur(25px);
   background: rgba(0, 0, 0, 0.01);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -481,7 +502,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-right: 44px;
+  padding-right: 115px;
   margin-bottom: 25px;
   padding-left: 60px;
 }
@@ -1307,6 +1328,11 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
   text-underline-offset: 7px;
   padding-bottom: 6px;
+}
+
+.footer__btn {
+    padding: 20px 82px 20px 30px;
+    font-size: 14px;
 }
 
 .footer__socials {

@@ -39,12 +39,12 @@
 
   .hero__btn-audit {
     font-size: 14px;
-    padding: 20px 88px 20px 50px;
+    padding: 18px 98px 18px 40px;
   }
 
   .hero__btn-more {
     font-size: 14px;
-    padding: 19px 70px;
+    padding: 17px 80px;
   }
 
   .hero {
@@ -58,7 +58,7 @@
 
   .callback {
     gap: 12px;
-    padding: 13px 40px;
+    padding: 14px 40px;
     padding-right: 60px;
     border-radius: 0 1000px 1000px 2000px;
   }
@@ -211,6 +211,10 @@
     right: 100px;
   }
 
+  .calm__top {
+  padding-right: 100px;
+  }
+
   .calm-card__footer {
     padding: 0 35px 45px 35px;
     gap: 150px;
@@ -274,7 +278,7 @@
   .step-card__desc {
     font-size: 13px;
     max-width: 312px;
-    line-height: 110%;
+    line-height: 140%;
   }
 
   .step-card__foot {
@@ -411,6 +415,10 @@
     width: 10px;
   }
 
+  .cta__input--trucks, .cta__dropdown {
+    max-width: 100%;
+  }
+
   .cta__input, .cta__select, .cta__dropdown-trigger {
     height: 45px;
     font-size: 13px;
@@ -483,6 +491,11 @@
   .footer__social {
     font-size: 18px;
     gap: 6px;
+  }
+
+  .footer__btn {
+    padding: 16px 62px 16px 20px !important;
+    font-size: 13px;
   }
 
   .footer__socials {

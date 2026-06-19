@@ -21,22 +21,22 @@
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item nav__item--active">
-            <a href="/" class="nav__link"><span class="nav__link-text">HOME</span></a>
+            <a href="#home" class="nav__link"><span class="nav__link-text">HOME</span></a>
           </li>
           <li class="nav__item">
-            <a href="/services" class="nav__link"><span class="nav__link-text">SERVICES</span></a>
+            <a href="#advantages" class="nav__link"><span class="nav__link-text">ADVANTAGES</span></a>
           </li>
           <li class="nav__item">
-            <a href="/about" class="nav__link"><span class="nav__link-text">ABOUT US</span></a>
+            <a href="#services" class="nav__link"><span class="nav__link-text">SERVICES</span></a>
           </li>
           <li class="nav__item">
-            <a href="/coupons" class="nav__link"><span class="nav__link-text">COUPONS</span></a>
+            <a href="#how-it-works" class="nav__link"><span class="nav__link-text">HOW IT WORKS</span></a>
           </li>
           <li class="nav__item">
-            <a href="/reviews" class="nav__link"><span class="nav__link-text">REVIEWS</span></a>
+            <a href="#trucks" class="nav__link"><span class="nav__link-text">TRUCKS</span></a>
           </li>
           <li class="nav__item">
-            <a href="/contact" class="nav__link"><span class="nav__link-text">CONTACT US</span></a>
+            <a href="#contact" class="nav__link"><span class="nav__link-text">CONTACT</span></a>
           </li>
         </ul>
       </nav>
@@ -69,29 +69,29 @@
     </div>
 
     <nav class="mobile-menu__nav" aria-label="Mobile navigation">
-      <a href="/" class="mobile-menu__link">
+      <a href="#home" class="mobile-menu__link">
         <span class="mobile-menu__num">01</span>
         <span class="mobile-menu__text">HOME</span>
       </a>
-      <a href="/services" class="mobile-menu__link">
+      <a href="#advantages" class="mobile-menu__link">
         <span class="mobile-menu__num">02</span>
+        <span class="mobile-menu__text">ADVANTAGES</span>
+      </a>
+      <a href="#services" class="mobile-menu__link">
+        <span class="mobile-menu__num">03</span>
         <span class="mobile-menu__text">SERVICES</span>
       </a>
-      <a href="/about" class="mobile-menu__link">
-        <span class="mobile-menu__num">03</span>
-        <span class="mobile-menu__text">ABOUT US</span>
-      </a>
-      <a href="/coupons" class="mobile-menu__link">
+      <a href="#how-it-works" class="mobile-menu__link">
         <span class="mobile-menu__num">04</span>
-        <span class="mobile-menu__text">COUPONS</span>
+        <span class="mobile-menu__text">HOW IT WORKS</span>
       </a>
-      <a href="/reviews" class="mobile-menu__link">
+      <a href="#trucks" class="mobile-menu__link">
         <span class="mobile-menu__num">05</span>
-        <span class="mobile-menu__text">REVIEWS</span>
+        <span class="mobile-menu__text">TRUCKS</span>
       </a>
-      <a href="/contact" class="mobile-menu__link">
+      <a href="#contact" class="mobile-menu__link">
         <span class="mobile-menu__num">06</span>
-        <span class="mobile-menu__text">CONTACT US</span>
+        <span class="mobile-menu__text">CONTACT</span>
       </a>
     </nav>
 
@@ -104,7 +104,7 @@
     </div>
   </aside>
 
-  <section class="hero">
+  <section class="hero" id="home">
     <video class="hero__video" autoplay muted loop playsinline>
       <source src="assets/vid/hero.mp4" type="video/mp4">
     </video>
@@ -141,7 +141,7 @@
     </div>
   </section>
 
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <a href="/" class="advantages__logo" data-aos="fade-up" data-aos-duration="900">
       <img src="assets/img/logo.svg" alt="TruckDispatch" width="151" height="20">
     </a>
@@ -221,7 +221,7 @@
   </section>
 
   <!-- ========== CALM ========== -->
-  <section class="calm" data-aos="fade-up" data-aos-duration="900">
+  <section class="calm" id="services" data-aos="fade-up" data-aos-duration="900">
     <div class="calm__top">
       <h2 class="calm__title">Stay calm on the road</h2>
       <p class="calm__desc">Improvement in cognitive functions from 10% to 400% <br> High adaptation of improvements to real professional activity</p>
@@ -286,7 +286,7 @@
   </section>
 
   <!-- ========== STEPS ========== -->
-  <section class="steps">
+  <section class="steps" id="how-it-works">
     <span class="steps__badge" data-aos="fade-up" data-aos-duration="900">Just 3 Steps</span>
     <h2 class="steps__title" data-aos="fade-up" data-aos-duration="900">Getting Started is Easier Than You Think.</h2>
     <div class="steps__cards">
@@ -318,7 +318,7 @@
     </div>
   </section>
     <!-- ========== TRUCK SELECTOR ========== -->
-  <section class="truck-selector" data-aos="fade-up" data-aos-duration="900">
+  <section class="truck-selector" id="trucks" data-aos="fade-up" data-aos-duration="900">
 
     <!-- LEFT COLUMN -->
     <div class="truck-selector__left">
@@ -526,7 +526,7 @@
   </section>
 
   <!-- ========== CTA ========== -->
-  <section class="cta">
+  <section class="cta" id="contact">
     <video class="cta__video" autoplay muted loop playsinline>
       <source src="assets/vid/cta.mp4" type="video/mp4">
     </video>
@@ -600,10 +600,10 @@
 
     <div class="footer__top">
       <nav class="footer__nav">
-        <a href="#" class="footer__nav-link">About</a>
-        <a href="#" class="footer__nav-link">Trucks</a>
-        <a href="#" class="footer__nav-link">Services</a>
-        <a href="#" class="footer__nav-link">Contact</a>
+        <a href="#advantages" class="footer__nav-link">Advantages</a>
+        <a href="#trucks" class="footer__nav-link">Trucks</a>
+        <a href="#services" class="footer__nav-link">Services</a>
+        <a href="#contact" class="footer__nav-link">Contact</a>
       </nav>
       <div class="footer__aside">
         <img class="footer__logo" src="assets/img/footer-logo.svg" alt="" width="57" height="35">
@@ -617,7 +617,7 @@
 
     <div class="footer__bottom">
       <div class="footer__bottom-info">
-        <a href="#" class="hero__btn-audit">Request Audit &amp; Strategy</a>
+        <a href="#" class="hero__btn-audit footer__btn">Request Audit &amp; Strategy</a>
         <div class="footer__contact">
           <div class="footer__office">
             <span class="footer__office-label">Office</span>

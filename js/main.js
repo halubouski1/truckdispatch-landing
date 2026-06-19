@@ -191,6 +191,9 @@ function setTruckSelectorMode() {
 if (truckSelector && truckMedia) {
   truckItems.forEach(item => {
     item.addEventListener('click', () => setActiveTruck(Number(item.dataset.index)));
+    item.addEventListener('mouseenter', () => {
+      if (!truckMobileQuery.matches) setActiveTruck(Number(item.dataset.index));
+    });
   });
 
   setTruckSelectorMode();
@@ -345,7 +348,7 @@ lenis.on('scroll', AOS.refresh);
     popup.classList.add('is-success');
   });
 
-  document.querySelectorAll('.hero__btn-audit:not(.popup__submit):not(.cta__btn)').forEach(btn => {
+  document.querySelectorAll('.hero__btn-audit:not(.popup__submit):not(.cta__btn), .callback').forEach(btn => {
     btn.addEventListener('click', e => { e.preventDefault(); openPopup(); });
   });
 
@@ -383,6 +386,26 @@ lenis.on('scroll', AOS.refresh);
     });
   });
 })();
+
+// ========== ANCHOR NAV SCROLL ==========
+document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(link => {
+  link.addEventListener('click', e => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    lenis.scrollTo(target, { duration: 1.4});
+  });
+});
+
+// ========== LEARN MORE SCROLL ==========
+const learnMoreBtn = document.querySelector('.hero__btn-more');
+const teamSection = document.querySelector('.team');
+if (learnMoreBtn && teamSection) {
+  learnMoreBtn.addEventListener('click', e => {
+    e.preventDefault();
+    lenis.scrollTo(teamSection, { duration: 1.4 });
+  });
+}
 
 // ========== SCROLL TO TOP ==========
 const scrollTopBtn = document.getElementById('scrollTop');
