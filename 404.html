@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.style.setProperty("--fixed-vh", window.innerHeight + "px");</script>
+  <title>TruckDispatch</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/404.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="/" class="header__logo">
+        <img src="assets/img/logo.svg" alt="TruckDispatch" width="151" height="20">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a href="/#home" class="nav__link"><span class="nav__link-text">HOME</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="/#advantages" class="nav__link"><span class="nav__link-text">ADVANTAGES</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="/#services" class="nav__link"><span class="nav__link-text">SERVICES</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="/#how-it-works" class="nav__link"><span class="nav__link-text">HOW IT WORKS</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="/#trucks" class="nav__link"><span class="nav__link-text">TRUCKS</span></a>
+          </li>
+          <li class="nav__item">
+            <a href="/#contact" class="nav__link"><span class="nav__link-text">CONTACT</span></a>
+          </li>
+        </ul>
+      </nav>
+      <a href="tel:+13054282020" class="header__phone phone">
+        <img src="assets/img/phone-icon.svg" alt="" class="phone__icon" width="27" height="27">
+        <span class="phone__number">(305)-428-2020</span>
+      </a>
+      <button class="header__burger" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="26" height="26" fill="#FFEB23"/>
+          <rect x="7" y="8" width="12" height="1.5" fill="#0D0D0D"/>
+          <rect x="7" y="12" width="12" height="1.5" fill="#0D0D0D"/>
+          <rect x="7" y="16" width="12" height="1.5" fill="#0D0D0D"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <a href="/" class="mobile-menu__logo">
+        <img src="assets/img/logo.svg" alt="TruckDispatch" width="151" height="20">
+      </a>
+      <button class="mobile-menu__close" type="button" aria-label="Close menu">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.34414 16C0.999815 16 0.655493 15.8694 0.393887 15.6058C-0.131296 15.0806 -0.131296 14.2292 0.393887 13.704L13.704 0.393878C14.2295 -0.131293 15.0809 -0.131293 15.6061 0.393878C16.1313 0.91905 16.1313 1.77048 15.6061 2.29598L2.2957 15.6058C2.03049 15.8694 1.68649 16 1.34414 16Z" fill="white"/>
+          <path d="M14.654 16C14.31 16 13.9657 15.8693 13.7041 15.6058L0.394129 2.29615C-0.131376 1.77092 -0.131376 0.919395 0.394129 0.394167C0.919305 -0.131389 1.77075 -0.131389 2.29592 0.394167L15.6059 13.7054C16.1314 14.2306 16.1314 15.0822 15.6059 15.6074C15.3426 15.8693 14.9983 16 14.654 16Z" fill="white"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <a href="/#home" class="mobile-menu__link">
+        <span class="mobile-menu__num">01</span>
+        <span class="mobile-menu__text">HOME</span>
+      </a>
+      <a href="/#advantages" class="mobile-menu__link">
+        <span class="mobile-menu__num">02</span>
+        <span class="mobile-menu__text">ADVANTAGES</span>
+      </a>
+      <a href="/#services" class="mobile-menu__link">
+        <span class="mobile-menu__num">03</span>
+        <span class="mobile-menu__text">SERVICES</span>
+      </a>
+      <a href="/#how-it-works" class="mobile-menu__link">
+        <span class="mobile-menu__num">04</span>
+        <span class="mobile-menu__text">HOW IT WORKS</span>
+      </a>
+      <a href="/#trucks" class="mobile-menu__link">
+        <span class="mobile-menu__num">05</span>
+        <span class="mobile-menu__text">TRUCKS</span>
+      </a>
+      <a href="/#contact" class="mobile-menu__link">
+        <span class="mobile-menu__num">06</span>
+        <span class="mobile-menu__text">CONTACT</span>
+      </a>
+    </nav>
+
+    <div class="mobile-menu__bottom">
+      <div class="mobile-menu__divider"></div>
+      <a href="tel:+13054282020" class="mobile-menu__phone">
+        <img src="assets/img/phone-icon.svg" alt="" width="39" height="39">
+        <span>(305)-428-2020</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="not-found">
+    <div class="not-found__inner">
+
+      <div class="not-found__left">
+        <div class="not-found__top">
+          <h1 class="not-found__code">404</h1>
+        </div>
+        <div class="not-found__bottom">
+          <a href="/" class="hero__btn-audit not-found__btn">Go for main</a>
+          <div class="not-found__text">
+            <span class="not-found__label">error</span>
+            <p class="not-found__desc">Sorry, the page you were looking for does not exist, go back one step and try another option</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="not-found__right">
+        <p class="not-found__sorry">Sorry, <br> but page <br> is not found</p>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
