@@ -89,37 +89,6 @@ function toggleNumbersSwiper() {
 toggleNumbersSwiper();
 numbersQuery.addEventListener('change', toggleNumbersSwiper);
 
-// ========== CALM SWIPER ==========
-if (typeof Swiper !== 'undefined' && document.querySelector('.calm__swiper')) {
-  const calmSwiper = new Swiper('.calm__swiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 22,
-    watchOverflow: true,
-  });
-
-  const calmPrev = document.querySelector('.calm__btn--prev');
-  const calmNext = document.querySelector('.calm__btn--next');
-
-  function updateCalmBtns() {
-    calmPrev?.classList.toggle('swiper-button-disabled', calmSwiper.isBeginning);
-    calmNext?.classList.toggle('swiper-button-disabled', calmSwiper.isEnd);
-  }
-
-  calmPrev?.addEventListener('click', () => {
-    calmSwiper.slidePrev();
-    updateCalmBtns();
-  });
-
-  calmNext?.addEventListener('click', () => {
-    calmSwiper.slideNext();
-    updateCalmBtns();
-  });
-
-  calmSwiper.on('slideChange', updateCalmBtns);
-
-  updateCalmBtns();
-}
-
 // ========== TRUCK SELECTOR ==========
 
 const truckSelector = document.querySelector('.truck-selector');

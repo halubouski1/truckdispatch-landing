@@ -183,46 +183,24 @@
     font-size: 30px;
   }
 
-  .calm__swiper {
-    padding-left: 30px;
-    padding-right: 30px;
+  .calm__cards {
+    padding: 0 30px;
+    gap: 10px;
   }
 
-  .calm__swiper .swiper-slide {
-    width: calc(100% - 33px);
-    height: 690px;
-  }
-
-  .calm__btn {
-    width: 90px;
-    height: 90px;
-  }
-
-  .calm__btn--prev {
-    left: 60px;
-  }
-
-  .calm__btn svg {
-    width: 15px;
-    height: 15px;
-  }
-
-  .calm__btn--next {
-    right: 100px;
+  .calm-card {
+    height: 700px;
+    padding: 30px 21px 21px 20px;
   }
 
   .calm__top {
   padding-right: 100px;
-  }
-
-  .calm-card__footer {
-    padding: 0 35px 45px 35px;
-    gap: 150px;
+  margin-bottom: 25px;
   }
 
   .calm-card__title {
     font-size: 50px;
-    flex: 0 0 380px;
+    max-width: 300px;
   }
 
   .calm__desc {
@@ -230,13 +208,13 @@
   }
 
   .calm-card__tag {
-    font-size: 13px;
-    padding: 15px 30px;
+    font-size: 12px;
+    padding: 13px;
+    height: 40px;
   }
 
   .calm-card__tags {
-    max-width: 727px;
-    gap: 10px;
+    gap: 8px;
   }
 
   /* .steps */
@@ -604,11 +582,12 @@
   }
 
   /* calm */
-  .calm-card__footer {
-    flex-direction: column;
-    align-items: self-start;
-    height: 100%;
-    padding: 26px 35px 45px 35px;
+  .calm-card {
+    height: 700px;
+  }
+
+  .calm-card__title {
+    font-size: 44px;
   }
 
   /* .truck-selector */
@@ -981,29 +960,12 @@
     text-align: center;
   }
 
-  .calm-card__footer {
-    gap: 0;
+  .calm__cards {
+    grid-template-columns: 1fr;
   }
 
-  .calm-card__title {
-    flex: none;
-  }
-
-  .calm__btn {
-    width: 60px;
-    height: 60px;
-  }
-
-  .calm__nav {
-    display: flex;
-    gap: 10px;
-    margin-top: 30px;
-    padding-left: 30px;
-  }
-
-  .calm__btn {
-    position: static;
-    transform: none;
+  .calm-card {
+    height: 600px;
   }
 
   /* step */
@@ -1285,49 +1247,40 @@
     padding: 0;
   }
 
-  .calm__swiper {
-    padding-left: 10px;
-    padding-right: 10px;
+  .calm__cards {
+    padding: 0 10px;
+    gap: 20px;
   }
 
-  .calm__swiper .swiper-slide {
-    width: 100%;
-    height: 630px;
-  }
-
-  .calm-card__footer {
-    padding: 30px 20px 20px 20px;
+  .calm-card {
+    height: 720px;
+    padding: 30px 20px 30px 20px;
   }
 
   .calm-card__title {
-    font-size: 28px;
+    font-size: 35px;
     line-height: 100%;
     max-width: 191px;
   }
 
   .calm-card__tag {
-    font-size: 13px;
-    padding: 15px 30px;
+    padding: 13px 19px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    height: 54px;
   }
 
-  .calm-card__tag {
-    padding: 13px 19px;
+  .calm-card__tag br {
+    display: none;
   }
 
   .calm-card__tags {
-    gap: 5px;
+    gap: 10px;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-  }
-
-  .calm__nav {
-    padding-left: 10px;
-  }
-
-  .calm__btn {
-    width: 54px;
-    height: 54px;
   }
 
   /* steps */

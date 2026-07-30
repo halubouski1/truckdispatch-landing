@@ -503,7 +503,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: flex-end;
   padding-right: 115px;
-  margin-bottom: 25px;
+  margin-bottom: 36px;
   padding-left: 60px;
 }
 
@@ -527,66 +527,64 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 400px;
 }
 
-/* Slider wrapper — position context for nav buttons */
-.calm__slider {
-  position: relative;
-}
-
-.calm__swiper .swiper-slide {
-  width: calc(100% - 43px);
-  height: 890px;
+.calm__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 44px;
 }
 
 /* ========== CALM CARD ========== */
 
 .calm-card {
+  position: relative;
+  height: 920px;
+  padding: 40px 30px 30px 24px;
   border-radius: 10px;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   overflow: hidden;
+}
+
+.calm-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
 }
 
 .calm-card--1 { background-image: url('../assets/img/calm-card-1.png'); }
 .calm-card--2 { background-image: url('../assets/img/calm-card-2.png'); }
-.calm-card--3 { background-image: url('../assets/img/calm-card-3.png'); }
-
-.calm-card__footer {
-  display: flex;
-  align-items: flex-end;
-  gap: 307px;
-  padding: 0 0 58px 59px;
+.calm-card--3 { 
+    background-image: url('../assets/img/calm-card-3.png');
+    background-position: center left 15%;
 }
 
 .calm-card__title {
-  flex: 0 0 500px;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 64px;
   line-height: 90%;
   letter-spacing: -0.03em;
   color: #fff;
+  max-width: 450px;
 }
 
 .calm-card__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 13px;
+  gap: 10px;
   align-content: flex-end;
-  flex: 1;
-  max-width: 901px;
-}
-
-.calm__swiper {
-  padding-left: 44px;
-  padding-right: 44px;
 }
 
 .calm-card__tag {
+  height: 54px;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 100%;
+  font-size: 14px;
+  line-height: 120%;
   letter-spacing: -0.03em;
   color: #fff;
   backdrop-filter: blur(40px);
@@ -596,43 +594,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 51px;
   display: inline-flex;
   align-items: center;
-  padding: 19px 44px;
-
-  white-space: nowrap;
-}
-
-/* ========== CALM NAV BUTTONS ========== */
-
-.calm__btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  border-radius: 1000px;
-  width: 121px;
-  height: 121px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffeb23;
-  color: #000;
-  transition: background-color 0.2s ease;
-}
-
-.calm__btn.swiper-button-disabled {
-  background-color: #fff;
-  cursor: default;
-}
-
-.calm__btn--prev {
-  left: 100px;
-}
-
-.calm__btn--next {
-  right: 120px;
+  padding: 15px 24px;
+  max-width: 100%;
 }
 
 /* ========== STEPS ========== */
